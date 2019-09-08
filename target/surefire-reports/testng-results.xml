@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestScenario" duration-ms="13422" started-at="2019-09-08T16:39:55 MSK" finished-at="2019-09-08T16:40:08 MSK">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="13422" started-at="2019-09-08T16:39:55 MSK" finished-at="2019-09-08T16:40:08 MSK">
+      <class name="TestScenario">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:TestScenario@13805618]" name="initBrowser" is-config="true" duration-ms="1967" started-at="2019-09-08T16:39:55 MSK" finished-at="2019-09-08T16:39:57 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="loginToMailBoxTest()[pri:0, instance:TestScenario@13805618]" name="loginToMailBoxTest" duration-ms="4361" started-at="2019-09-08T16:39:57 MSK" description="check if login to mail.ru is successful" finished-at="2019-09-08T16:40:01 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToMailBoxTest -->
+        <test-method status="PASS" signature="checkMailSubjectInDraftFolderTest()[pri:0, instance:TestScenario@13805618]" name="checkMailSubjectInDraftFolderTest" duration-ms="3002" started-at="2019-09-08T16:40:01 MSK" description="check if new mail present in draft folder" depends-on-methods="TestScenario.loginToMailBoxTest" finished-at="2019-09-08T16:40:04 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMailSubjectInDraftFolderTest -->
+        <test-method status="PASS" signature="checkMailTextInDraftsFolderTest()[pri:0, instance:TestScenario@13805618]" name="checkMailTextInDraftsFolderTest" duration-ms="92" started-at="2019-09-08T16:40:04 MSK" description="check text in letter" depends-on-methods="TestScenario.checkMailSubjectInDraftFolderTest" finished-at="2019-09-08T16:40:04 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMailTextInDraftsFolderTest -->
+        <test-method status="PASS" signature="checkDraftFolderIsEmpty()[pri:0, instance:TestScenario@13805618]" name="checkDraftFolderIsEmpty" duration-ms="1179" started-at="2019-09-08T16:40:04 MSK" description="check letter in Draft folder" depends-on-methods="TestScenario.checkMailTextInDraftsFolderTest" finished-at="2019-09-08T16:40:05 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDraftFolderIsEmpty -->
+        <test-method status="PASS" signature="checkSentFolderIsNotEmpty()[pri:0, instance:TestScenario@13805618]" name="checkSentFolderIsNotEmpty" duration-ms="1170" started-at="2019-09-08T16:40:05 MSK" description="check letter in Draft folder" depends-on-methods="TestScenario.checkDraftFolderIsEmpty" finished-at="2019-09-08T16:40:07 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSentFolderIsNotEmpty -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:TestScenario@13805618]" name="logout" duration-ms="1467" started-at="2019-09-08T16:40:07 MSK" description="log out" depends-on-methods="TestScenario.checkSentFolderIsNotEmpty" finished-at="2019-09-08T16:40:08 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="kill()[pri:0, instance:TestScenario@13805618]" name="kill" is-config="true" duration-ms="153" started-at="2019-09-08T16:40:08 MSK" description="close browser" finished-at="2019-09-08T16:40:08 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- kill -->
+      </class> <!-- TestScenario -->
+    </test> <!-- Command line test -->
+  </suite> <!-- TestScenario -->
+</testng-results>
