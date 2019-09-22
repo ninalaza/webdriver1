@@ -32,17 +32,17 @@ public class MailRuSimpleTest extends BaseTest {
     @Test(description = "check if login to mail.ru is successful")
     public void loginToMailBoxTest() {
 
-       homePage.open().fillLoginField(TestData.LOGIN_NAME).clickEnterPassword()
-                .fillPasswordField(TestData.PASSWORD).startUserSession();
+       homePage.open().fillLoginField(testUser).clickEnterPassword()
+                .fillPasswordField(testUser).startUserSession();
 
         String authorizationData = userAccountPage.checkAutorisationData();
-        Assert.assertEquals(authorizationData, TestData.EMAIL, "The email does not belong to the account being verified");
+        Assert.assertEquals(authorizationData, testUser.getEmail(), "The email does not belong to the account being verified");
     }
 
     @Test(description = "check if new mail present in draft folder", dependsOnMethods = {"loginToMailBoxTest"})
     public void checkMailSubjectInDraftFolderTest() {
         userAccountPage.writeNewLetter();
-        newLetter.fillAdressField(TestData.RECEIVER_EMAIL)
+        newLetter.fillAdressField(testUser)
                 .fillSubjectField(emailSubject).fillBodyInNewLetterField(emailBody);
         newLetter.saveLetterInDrafts();
         newLetter.closeComposeMessage();

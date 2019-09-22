@@ -1,5 +1,6 @@
 package com.epam.mentoring.page;
 
+import com.epam.mentoring.testdata.bean.User;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,15 +28,15 @@ public class HomePage extends AbstractPage {
         return this;
     }
 
-    public HomePage fillLoginField(String query) {
+    public HomePage fillLoginField(User testUser) {
         waitForElementVisible(loginField);
-        loginField.sendKeys(query);
+        loginField.sendKeys(testUser.getLoginName());
         return this;
     }
 
-    public HomePage fillPasswordField(String query) {
+    public HomePage fillPasswordField(User testUser) {
         waitUntilElementClickable(passwordField);
-        passwordField.sendKeys(query);
+        passwordField.sendKeys(testUser.getPassword());
         return this;
     }
 

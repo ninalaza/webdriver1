@@ -1,5 +1,6 @@
 package com.epam.mentoring.page;
 
+import com.epam.mentoring.testdata.bean.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -30,9 +31,9 @@ public class NewLetterPage extends AbstractPage {
         super(driver);
     }
 
-    public NewLetterPage fillAdressField(String query) {
+    public NewLetterPage fillAdressField(User testUser) {
         waitForElementVisible(fillAdressField);
-        fillAdressField.sendKeys(query);
+        fillAdressField.sendKeys(testUser.getReceiver_email());
         return this;
     }
 

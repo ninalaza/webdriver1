@@ -32,8 +32,8 @@ public class MailRuActionsTest  extends BaseTest {
     @Test(description = "check if login to mail.ru is successful")
     public void loginToMailBoxTest() {
 
-        homePage.open().fillLoginField(TestData.LOGIN_NAME).clickEnterPassword()
-                .fillPasswordField(TestData.PASSWORD).startUserSession();
+        homePage.open().fillLoginField(testUser).clickEnterPassword()
+                .fillPasswordField(testUser).startUserSession();
 
         String authorizationData = userAccountPage.checkAutorisationData();
         Assert.assertEquals(authorizationData, TestData.EMAIL, "The email does not belong to the account being verified");
@@ -42,7 +42,7 @@ public class MailRuActionsTest  extends BaseTest {
     @Test(description = "Save email as draft message and check it subject in Draft folder", dependsOnMethods = {"loginToMailBoxTest"})
     public void saveEmailAsDraftTest(){
         userAccountPage.writeNewLetter();
-        newLetter.fillAdressField(TestData.RECEIVER_EMAIL)
+        newLetter.fillAdressField(testUser)
                 .fillSubjectField(emailSubject).fillBodyInNewLetterField(emailBody);
 
         newLetter.saveLetterInDrafts();
