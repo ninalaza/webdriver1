@@ -4,7 +4,6 @@ import com.epam.mentoring.page.HomePage;
 import com.epam.mentoring.page.NewLetterPage;
 import com.epam.mentoring.page.OldLetterPage;
 import com.epam.mentoring.page.UserAccountPage;
-import com.epam.mentoring.testdata.TestData;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
