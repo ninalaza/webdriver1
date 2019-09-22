@@ -1,1 +1,0 @@
-java -Dwebdriver.chrome.driver=C:\Production\Grid\chromedriver.exe -jar selenium-server-standalone-3.141.59.jar -role node -hub http://10.15.101.14:4444/grid/register -port 1111 -browser browserName=chrome,platform=WINDOWS,maxInstances=10,maxSession=10
