@@ -1,4 +1,4 @@
-package utils;
+package com.epam.mentoring.util;
 
 import java.security.SecureRandom;
 
