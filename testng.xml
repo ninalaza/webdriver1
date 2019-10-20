@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Mentoring_mail_ru_tests" parallel="none" verbose="1">
+
+    <test name="MailRuSimpleTests" parallel="false">
+        <classes>
+            <class name="com.epam.mentoring.test.MailRuSimpleTest" />
+        </classes>
+    </test>
+    <test name="MailRuActionTests" parallel="false">
+        <classes>
+            <class name="com.epam.mentoring.test.MailRuActionsTest" />
+        </classes>
+    </test>
+</suite>
