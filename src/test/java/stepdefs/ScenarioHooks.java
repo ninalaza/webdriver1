@@ -16,3 +16,4 @@ public class ScenarioHooks {
         WebDriverInstance.closeDriver();
     }
     }
+
