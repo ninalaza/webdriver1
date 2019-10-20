@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b79f46c8-51ae-48b2-8c62-ada4a1c221e7" name="Default" comment="refactoring">
-      <change beforePath="$PROJECT_DIR$/.idea/Trainings.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -38,14 +34,18 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/Data/Demo-M14-java/demo13" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.epam.mentoring" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="stepdefs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test" />
@@ -68,17 +68,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.MailRuSimpleTest (1)">
-    <configuration name="MailRuSimpleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.epam.mentoring.test.MailRuSimpleTest" />
-      <module name="webdriver1" />
+  <component name="RunManager" selected="Cucumber java.Scenario: ">
+    <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <configuration name="Scenario: " type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="4" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/feature/MailRuSuccessfulLogin.feature" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="webdriver1" />
+      <option name="NAME_FILTER" value="^$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: " />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -178,7 +188,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MailRuSimpleTest" />
+      <item itemvalue="Cucumber java.Scenario: " />
       <item itemvalue="TestNG.MailRuSimpleTest" />
       <item itemvalue="TestNG.MailRuActionsTest" />
       <item itemvalue="TestNG.MailRuSimpleTest (1)" />
@@ -186,10 +196,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MailRuSimpleTest (1)" />
+        <item itemvalue="Cucumber java.Scenario: " />
         <item itemvalue="TestNG.MailRuActionsTest (1)" />
+        <item itemvalue="TestNG.MailRuSimpleTest (1)" />
         <item itemvalue="TestNG.MailRuActionsTest" />
-        <item itemvalue="TestNG.MailRuSimpleTest" />
         <item itemvalue="TestNG.MailRuSimpleTest" />
       </list>
     </recent_temporary>
@@ -261,7 +271,21 @@
       <option name="project" value="LOCAL" />
       <updated>1569173110199</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update for Cucumber framework">
+      <created>1570377340514</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1570377340514</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update">
+      <created>1571597394673</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1571597394673</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,9 +303,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add changes" />
-    <MESSAGE value="update" />
     <MESSAGE value="refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
+    <MESSAGE value="update for Cucumber framework" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
